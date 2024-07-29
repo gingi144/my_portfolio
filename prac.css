@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 1em;
+    box-shadow: 0 5px 10px rgb(230, 5, 200);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 45%;
+    margin: 1em 0;
+    padding: 1.5em;
+    background-color: #e6e6fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(230, 5, 155, 0.952);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.rotating-div {
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #6a5acd;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* Additional Styling */
+h2 {
+    color: #6a5acd;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
